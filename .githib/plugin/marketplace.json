@@ -1,0 +1,13 @@
+{
+  "name": "FGT-Developer-Plugin",
+  "owner": { "name": "FGT-Developer-Plugin", "url": "https://github.com/lewishyettFGT/FGT-Developer-Plugin" },
+  "plugins": [
+    {
+      "name": "AL-Developer-Plugin",
+      "source": "./plugins/AL-developer-plugin",
+      "description": "AL agents (incl. on-demand triage + dredd audit) + TDD subagents, skills, and workflows for BC extension development with TDD, BCQuality-cited review, event-driven architecture, and HITL gates.",
+        "version": "1.0.0"
+      
+    }
+  ]
+}
