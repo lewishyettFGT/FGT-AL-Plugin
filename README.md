@@ -107,3 +107,24 @@ Code audit?                → @Dredd
 5. Open the Copilot Chat panel and type `@` to see the available agents (`@AL Development Conductor`, `@AL Architecture & Design Specialist`, etc.).
 
 > The plugin requires GitHub Copilot (Individual, Business, or Enterprise). Skills and instructions are loaded automatically — no additional configuration is needed after installation.
+
+## Configuration
+
+### Enable `/` Slash Commands (Prompt Workflows)
+
+To make the workflow prompts available as `/` commands in Copilot Chat, you must register the plugin's prompts directory in your VS Code settings (`settings.json`):
+
+```json
+"chat.promptFilesLocations": {
+    ".github/prompts": true,
+    "c:\\Users\\<YourUsername>\\.vscode\\agent-plugins\\github.com\\lewishyettFGT\\FGT-AL-Plugin\\plugins\\AL-Developer-Plugin\\prompts": true
+}
+```
+
+Replace `<YourUsername>` with your Windows username. On a typical installation the full path will be:
+
+```
+c:\Users\<YourUsername>\.vscode\agent-plugins\github.com\lewishyettFGT\FGT-AL-Plugin\plugins\AL-Developer-Plugin\prompts
+```
+
+Once added, reload VS Code and the workflows (e.g. `/al-spec.create`, `/al-build`, `/al-initialize`) will appear in the Copilot Chat `/` command picker.
