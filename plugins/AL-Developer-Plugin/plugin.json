@@ -2,5 +2,5 @@
   "name": "AL-Developer-Plugin",
   "description": "AL agents (incl. on-demand triage + dredd audit) + TDD subagents, skills, and workflows for BC extension development with TDD, BCQuality-cited review, event-driven architecture, and HITL gates.",
   "version": "1.0.0",
-  "author": { "name": "LeFGT-Developer-Plugin" }
+  "author": { "name": "FGT-Developer-Plugin" }
 }
